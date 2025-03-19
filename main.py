@@ -35,7 +35,7 @@ async def main():
                     'password': proxy['password'],
                 }
 
-            context = await p.chromium.launch_persistent_context('./user_data', **context_kwargs)
+            context = await p.chromium.launch_persistent_context('', **context_kwargs)
 
             await asyncio.sleep(2)
             
